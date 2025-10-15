@@ -1,0 +1,106 @@
+.header{
+   padding-top: 70px;
+   height: 34vw;
+   margin:0 ;
+   background: url('header_img.png') no-repeat;
+   position: relative;
+   background-size:100%;
+   animation: fadeInBackground 2s ease-out;
+   border-radius: 20px;
+   margin-bottom:50px;
+
+}
+.header-content{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:1.5vw;
+    max-width: 50%;
+    left:6vw;
+    animation: fadeIn 3s;
+}
+.header-content h2{
+    font-weight: 500;
+    color:white;
+    font-size: max(4.5vw,22px);
+}
+.header-content p{
+    color:white;
+    font-size:1vw;
+}
+.header-content button{
+    border:none;
+    color:#747474;
+    font-weight: 500;
+    padding:1vw;
+    border-radius: 50px;
+   
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 1200px) {
+    .header {
+        height: 30vw;
+        margin: 0 auto;
+    }
+    
+    .header-content {
+        max-width: 45%;
+        left: 8vw;
+        gap: 2vw;
+    }
+    
+    .header-content h2 {
+        font-size: max(4vw, 28px);
+    }
+    
+    .header-content p {
+        font-size: 1.2vw;
+    }
+}
+
+@media (min-width: 1600px) {
+    .header {
+        height: 28vw;
+        margin: 0 auto;
+    }
+    
+    .header-content {
+        max-width: 40%;
+        left: 10vw;
+        gap: 2.5vw;
+    }
+    
+    .header-content h2 {
+        font-size: max(3.5vw, 32px);
+    }
+    
+    .header-content p {
+        font-size: 1.4vw;
+    }
+}
+
+/* Ensure header is always visible */
+@media (min-width: 768px) {
+    .header {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
