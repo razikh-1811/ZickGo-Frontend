@@ -9,7 +9,7 @@ const StoreContextProvider = (props) => {
   const [token, settoken] = useState("");
 
   // Backend URL (deployed on Vercel)
-  const url = "https://zick-go-backend.onrender.com";
+  const url = "https://zikhgo-backend.onrender.com";
 
   // Add item to cart
   const addToCart = async (ItemId) => {
