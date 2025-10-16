@@ -5,7 +5,7 @@ export const StoreContext= createContext(null);
 const StoreContextProvider=(props)=>
 {
     const [cartItems,setCartItems]=useState({})
-    const url="https://zick-go-back-end.vercel.app/";
+    const url="https://zick-go-back-end.vercel.app";
     const [token,settoken]=useState("");
     const [food_list,setfood_list]=useState([]);
     const addToCart= async (ItemId)=>
