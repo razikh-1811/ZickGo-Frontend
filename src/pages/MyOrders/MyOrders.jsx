@@ -11,7 +11,7 @@ const MyOrders = () => {
   const fetchOrders = async () => {
     try {
       const response = await axios.post(
-        url + "/api/order/user-orders", // <-- match backend route
+        url + "/api/order/userOrders", // <-- match backend route
         {},
         { headers: { token } } // send token if backend requires authentication
       );
