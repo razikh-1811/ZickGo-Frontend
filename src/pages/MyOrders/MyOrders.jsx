@@ -11,9 +11,9 @@ const MyOrders = () => {
   const fetchOrders = async () => {
     try {
       const response = await axios.post(
-        url + "/api/order/userOrders", // matches backend route now
+        url + "/api/order/user-orders", // <-- match backend route
         {},
-        { headers: { token } }
+        { headers: { token } } // send token if backend requires authentication
       );
       setData(response.data.data);
     } catch (err) {
@@ -22,9 +22,7 @@ const MyOrders = () => {
   };
 
   useEffect(() => {
-    if (token) {
-      fetchOrders();
-    }
+    if (token) fetchOrders();
   }, [token]);
 
   return (
