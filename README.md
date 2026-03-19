@@ -1,12 +1,20 @@
-# React + Vite
+ZikkGo - Food Delivery Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ZickGo is a modern **food delivery web application** that allows users to browse restaurants, order food, and track deliveries in real time.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
+- React.js
+- JavaScript
+- Tailwind CSS / Bootstrap
+- Axios
+- React Router
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Features
+- 🧑‍🍳 Browse restaurants & menus
+- 🔍 Search & filter food items
+- 🛒 Add to cart & checkout
+- 🔐 User authentication (Login/Signup)
+- 📦 Order tracking UI
+- 📱 Fully responsive design
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+LIVE: https://zikhgo.netlify.app/
